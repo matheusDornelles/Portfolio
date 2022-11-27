@@ -9,26 +9,26 @@ const socialNetworks = [
 ];
 
 const SocialNetworks = () => {
-  getSocialNetwork(socialNetworks);
-}
-
-function getSocialNetwork(socialNetworks) {
-  socialNetworks.map(network => {
-    if (network.name == "github") {
-      return ((<section id="social-networks">
-
+  return (
+    <section id="social-networks">
+      {socialNetworks.filter(network => network.name == "github").map((network) => (
         <a href="https://github.com/matheusDornelles" className="social-btn" id={network.name} key={network.name}>
           {network.icon}
         </a>
+      ))}
+      {socialNetworks.filter(network => network.name == "linkedin").map((network) => (
+        <a href="https://www.linkedin.com/in/matheus-dornelles-02942791/" className="social-btn" id={network.name} key={network.name}>
+          {network.icon}
+        </a>
+      ))}
+      {socialNetworks.filter(network => network.name == "instagram").map((network) => (
+        <a href="https://www.instagram.com/matheusdornelless/" className="social-btn" id={network.name} key={network.name}>
+          {network.icon}
+        </a>
+      ))}
 
-      </section>));
-    } else if (network.name == "linkedin") {
-      return (<a href="https://www.linkedin.com/in/matheus-dornelles-02942791/" className="social-btn" id={network.name} key={network.name}>
-        {network.icon}
-      </a>)
-
-    }
-  })
+    </section>
+  );
 }
 
 // TODO alterar condicional if else para usar filter do array. mudar function para arrow function
