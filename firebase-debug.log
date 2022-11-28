@@ -1,0 +1,128 @@
+[debug] [2022-11-28T22:57:24.322Z] ----------------------------------------------------------------------
+[debug] [2022-11-28T22:57:24.324Z] Command:       D:\nodejs\node.exe C:\Users\mdmai\OneDrive\Área de Trabalho\portfolio\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2022-11-28T22:57:24.325Z] CLI Version:   11.16.1
+[debug] [2022-11-28T22:57:24.326Z] Platform:      win32
+[debug] [2022-11-28T22:57:24.326Z] Node Version:  v18.12.1
+[debug] [2022-11-28T22:57:24.327Z] Time:          Mon Nov 28 2022 19:57:24 GMT-0300 (Brasilia Standard Time)
+[debug] [2022-11-28T22:57:24.327Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-28T22:57:24.422Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-28T22:57:24.422Z] > authorizing via signed-in user (mdmaia91@gmail.com)
+[debug] [2022-11-28T22:57:24.423Z] [iam] checking project mdmaiaport for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-11-28T22:57:24.425Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mdmaiaport:testIamPermissions [none]
+[debug] [2022-11-28T22:57:24.425Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mdmaiaport:testIamPermissions x-goog-quota-user=projects/mdmaiaport
+[debug] [2022-11-28T22:57:24.426Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mdmaiaport:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-11-28T22:57:25.521Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mdmaiaport:testIamPermissions 200
+[debug] [2022-11-28T22:57:25.521Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mdmaiaport:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-11-28T22:57:25.522Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mdmaiaport [none]
+[debug] [2022-11-28T22:57:26.161Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mdmaiaport 200
+[debug] [2022-11-28T22:57:26.162Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mdmaiaport {"projectId":"mdmaiaport","projectNumber":"836635548937","displayName":"mdmaiaport","name":"projects/mdmaiaport","resources":{"hostingSite":"mdmaiaport"},"state":"ACTIVE","etag":"1_e9c4dfc5-8ea2-4d14-a2ee-e14bab7c5df7"}
+[info] 
+[info] === Deploying to 'mdmaiaport'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-11-28T22:57:26.170Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/mdmaiaport/versions [none]
+[debug] [2022-11-28T22:57:26.170Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/mdmaiaport/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-11-28T22:57:27.590Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/mdmaiaport/versions 500
+[debug] [2022-11-28T22:57:27.591Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/mdmaiaport/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-11-28T22:57:27.817Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
+[debug] [2022-11-28T22:58:13.629Z] ----------------------------------------------------------------------
+[debug] [2022-11-28T22:58:13.631Z] Command:       D:\nodejs\node.exe C:\Users\mdmai\OneDrive\Área de Trabalho\portfolio\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-11-28T22:58:13.631Z] CLI Version:   11.16.1
+[debug] [2022-11-28T22:58:13.632Z] Platform:      win32
+[debug] [2022-11-28T22:58:13.632Z] Node Version:  v18.12.1
+[debug] [2022-11-28T22:58:13.633Z] Time:          Mon Nov 28 2022 19:58:13 GMT-0300 (Brasilia Standard Time)
+[debug] [2022-11-28T22:58:13.633Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-28T22:58:13.779Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-28T22:58:13.780Z] > authorizing via signed-in user (mdmaia91@gmail.com)
+[info] i  emulators: Starting emulators: hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: hosting"}}
+[debug] [2022-11-28T22:58:13.799Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-11-28T22:58:13.799Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2022-11-28T22:58:13.799Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5033}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2022-11-28T22:58:13.810Z] [hub] writing locator at C:\Users\mdmai\AppData\Local\Temp\hub-mdmaiaport.json
+[debug] [2022-11-28T22:58:13.837Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/mdmaiaport/sites 
+[debug] [2022-11-28T22:58:15.006Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/mdmaiaport/sites 200
+[debug] [2022-11-28T22:58:15.006Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/mdmaiaport/sites {"sites":[{"name":"projects/mdmaiaport/sites/mdmaiaport","defaultUrl":"https://mdmaiaport.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2022-11-28T22:58:15.007Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mdmaiaport/webApps/-/config [none]
+[debug] [2022-11-28T22:58:16.109Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mdmaiaport/webApps/-/config 403
+[debug] [2022-11-28T22:58:16.109Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mdmaiaport/webApps/-/config {"error":{"code":403,"message":"Project '836635548937' not found or permission denied.\ncom.google.api.tenant.error.TenantManagerException: Project '836635548937' not found or permission denied.","status":"PERMISSION_DENIED"}}
+[debug] [2022-11-28T22:58:16.109Z] fetchWebSetup error: FirebaseError: HTTP Error: 403, Project '836635548937' not found or permission denied.
+com.google.api.tenant.error.TenantManagerException: Project '836635548937' not found or permission denied.
+[warn] !  hosting: Authentication error when trying to fetch your current web app configuration, have you run firebase login? 
+[warn] !  hosting: Could not fetch web app configuration and there is no cached configuration on this machine. Check your internet connection and make sure you are authenticated. To continue, you must call firebase.initializeApp({...}) in your code before using Firebase. 
+[debug] [2022-11-28T22:58:16.112Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mdmaiaport [none]
+[debug] [2022-11-28T22:58:16.570Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mdmaiaport 200
+[debug] [2022-11-28T22:58:16.570Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mdmaiaport {"projectId":"mdmaiaport","projectNumber":"836635548937","displayName":"mdmaiaport","name":"projects/mdmaiaport","resources":{"hostingSite":"mdmaiaport"},"state":"ACTIVE","etag":"1_e9c4dfc5-8ea2-4d14-a2ee-e14bab7c5df7"}
+[info] i  hosting[mdmaiaport]: Serving hosting files from: out {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mout\u001b[22m"}}
+[info] +  hosting[mdmaiaport]: Local server: http://127.0.0.1:5033 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5033\u001b[22m\u001b[24m"}}
+[warn] !  emulators: The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project. {"metadata":{"emulator":{"name":"hub"},"message":"The Emulator UI is not starting, either because none of the emulated products have an interaction layer in Emulator UI or it cannot determine the Project ID. Pass the --project flag to specify a project."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+└─────────────────────────────────────────────────────────────┘
+
+┌──────────┬────────────────┐
+│ Emulator │ Host:Port      │
+├──────────┼────────────────┤
+│ Hosting  │ 127.0.0.1:5033 │
+└──────────┴────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-11-28T22:58:58.427Z] ----------------------------------------------------------------------
+[debug] [2022-11-28T22:58:58.429Z] Command:       D:\nodejs\node.exe C:\Users\mdmai\OneDrive\Área de Trabalho\portfolio\node_modules\firebase-tools\lib\bin\firebase.js deploy --only hosting
+[debug] [2022-11-28T22:58:58.429Z] CLI Version:   11.16.1
+[debug] [2022-11-28T22:58:58.429Z] Platform:      win32
+[debug] [2022-11-28T22:58:58.429Z] Node Version:  v18.12.1
+[debug] [2022-11-28T22:58:58.430Z] Time:          Mon Nov 28 2022 19:58:58 GMT-0300 (Brasilia Standard Time)
+[debug] [2022-11-28T22:58:58.431Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-28T22:58:58.513Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-28T22:58:58.513Z] > authorizing via signed-in user (mdmaia91@gmail.com)
+[debug] [2022-11-28T22:58:58.514Z] [iam] checking project mdmaiaport for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-11-28T22:58:58.516Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/mdmaiaport:testIamPermissions [none]
+[debug] [2022-11-28T22:58:58.516Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/mdmaiaport:testIamPermissions x-goog-quota-user=projects/mdmaiaport
+[debug] [2022-11-28T22:58:58.516Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mdmaiaport:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-11-28T22:58:59.463Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/mdmaiaport:testIamPermissions 200
+[debug] [2022-11-28T22:58:59.464Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/mdmaiaport:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-11-28T22:58:59.465Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mdmaiaport [none]
+[debug] [2022-11-28T22:58:59.970Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mdmaiaport 200
+[debug] [2022-11-28T22:58:59.970Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mdmaiaport {"projectId":"mdmaiaport","projectNumber":"836635548937","displayName":"mdmaiaport","name":"projects/mdmaiaport","resources":{"hostingSite":"mdmaiaport"},"state":"ACTIVE","etag":"1_e9c4dfc5-8ea2-4d14-a2ee-e14bab7c5df7"}
+[info] 
+[info] === Deploying to 'mdmaiaport'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-11-28T22:58:59.975Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/mdmaiaport/versions [none]
+[debug] [2022-11-28T22:58:59.975Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/mdmaiaport/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-11-28T22:59:01.250Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/mdmaiaport/versions 500
+[debug] [2022-11-28T22:59:01.250Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/mdmaiaport/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2022-11-28T22:59:01.478Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}
