@@ -126,3 +126,4 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
     "statusCode": 500
   }
 }
+[debug] [2022-11-28T23:35:02.010Z] Received signal SIGHUP 1
